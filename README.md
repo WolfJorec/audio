@@ -62,7 +62,7 @@ const myAudio = document.getElementById("myAudio");
 // 记录开启或关闭的状态
 let bool = true;
 
-// 监听元素时间获取音频时间
+// 监听元素事件获取音频时间
 myAudio.addEventListener("durationchange", function() {
     // 显示播放时长
     $("#timer").html(`${ Math.floor((myAudio.duration / 60) % 60) < 10 ? '0' + Math.floor((myAudio.duration / 60) %
